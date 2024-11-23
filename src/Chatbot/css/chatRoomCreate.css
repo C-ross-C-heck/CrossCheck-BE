@@ -1,0 +1,70 @@
+/* src/Chatbot/css/chatRoomCreate.css */
+.chat-room-create {
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+}
+
+.create-title {
+      font-family: "Pretendard";
+      font-size: 28px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 48px;
+      text-align: center;
+}
+
+.input-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+}
+
+.input-container {
+      flex: 1;
+      position: relative;
+}
+
+.input-container input {
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-bottom: 1px solid #000;
+      background: transparent;
+      font-family: "Pretendard";
+      font-size: 16px;
+      outline: none;
+      padding: 8px 0;
+}
+
+.input-container input::placeholder {
+      color: #999;
+      font-family: "Pretendard";
+}
+
+.create-button {
+      padding: 12px 24px;
+      background-color: #FFD1DC; /* 비활성화된 상태 */
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: "Pretendard";
+      font-size: 16px;
+      font-weight: 500;
+      cursor: not-allowed;
+      transition: background-color 0.3s, opacity 0.2s;
+}
+
+.create-button.active {
+      background-color: #FF8FAB; /* 활성화된 상태 */
+      cursor: pointer;
+}
+
+.create-button:hover.active {
+      opacity: 0.9;
+}

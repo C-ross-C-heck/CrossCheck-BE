@@ -1,0 +1,124 @@
+.history-container {
+      min-height: 100vh;
+      background-color: #fff;
+      /* Sidebar 너비만큼 margin 추가 */
+      margin-left: 400px;
+      margin-right: 100px;
+      /* Sidebar 너비를 제외한 너비 설정 */
+      width: calc(100% - 300px);
+}
+
+.history-main {
+      padding: 30px;
+      width: 100%;
+}
+
+.history-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+}
+
+.history-header h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+}
+
+.new-chat-button {
+      background-color: #FFB6C1;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s;
+}
+
+.new-chat-button:hover {
+      background-color: #FF8FAB;
+}
+
+.search-container {
+      margin-bottom: 30px;
+}
+
+.search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 25px;
+      padding: 10px 20px;
+      background-color: white;
+}
+
+.search-icon {
+      margin-right: 10px;
+      color: #666;
+}
+
+.search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 5px;
+}
+
+.chat-history-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+
+.chat-history-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FFE4EC;
+      padding: 20px;
+      border-radius: 10px;
+      transition: background-color 0.2s;
+}
+
+.chat-history-item:hover {
+      background-color: #FFD1DC;
+}
+
+.chat-info {
+      flex: 1;
+}
+
+.chat-info h3 {
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+      margin-bottom: 5px;
+}
+
+.chat-info span {
+      font-size: 14px;
+      color: #666;
+}
+
+.chat-actions {
+      display: flex;
+      gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 5px;
+      transition: opacity 0.2s;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+      opacity: 0.7;
+}

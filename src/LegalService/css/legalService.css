@@ -1,0 +1,133 @@
+/* src/LegalService/css/legalService.css */
+.legal-service-container {
+      margin-left: 300px;
+      width: calc(100% - 300px);
+      min-height: 100vh;
+      background-color: #f8f9fa;
+    }
+    
+    .service-content {
+      padding: 40px;
+    }
+    
+    /* Header Banner */
+    .header-banner {
+      background-color: #ff8fab;
+      border-radius: 20px;
+      padding: 30px;
+      color: white;
+      margin-bottom: 30px;
+    }
+    
+    .banner-content h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .banner-content h2 {
+      font-size: 40px;
+      color: #d9d9d9;
+      margin-bottom: 20px;
+    }
+    
+    .banner-content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    /* Service Options */
+    .service-options {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .service-card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 120px;
+    }
+    
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+    }
+    
+    .service-card img {
+      width: 24px;
+      height: 24px;
+      align-self: flex-end;
+    }
+    
+    /* Lawyers Section */
+    .lawyers-section {
+      padding: 20px 0;
+    }
+    
+    .lawyers-section h2 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    
+    .lawyers-slider {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .lawyers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      flex: 1;
+    }
+    
+    .lawyer-card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .lawyer-profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    .lawyer-info h3 {
+      font-size: 14px;
+      font-weight: 800;
+      color: #212529;
+      margin-bottom: 5px;
+    }
+    
+    .lawyer-info p {
+      font-size: 10px;
+      color: #6c757d;
+    }
+    
+    .arrow-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    
+    .arrow-btn img {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .arrow-btn:hover {
+      opacity: 0.8;
+    }
