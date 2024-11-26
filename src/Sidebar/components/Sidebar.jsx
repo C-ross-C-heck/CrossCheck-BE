@@ -11,7 +11,7 @@ const Sidebar = () => {
         <aside className="sidebar">
           <h1 className="sidebar-title">Cross Check</h1>
           <div className="new-chat-container">
-            <button className="new-chat-btn" onClick={() => navigate('/ChatRoomCreate')}>
+            <button className="new-chat-btn" onClick={() => navigate('/Chatbot')}>
               Start a new chat
             </button>
           </div>
