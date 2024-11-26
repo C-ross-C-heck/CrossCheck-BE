@@ -30,8 +30,8 @@ const Login = () => {
       console.log('Result:', result);
 
       if (response.ok) {
-        // 로그인 성공 시 userId를 로컬스토리지에 저장
-        localStorage.setItem('userId', formData.id); // 서버 응답에서 userId를 가져옴
+        // 로그인 성공 시 userId를 세션에 저장
+        sessionStorage.setItem('userId', formData.id); // 서버 응답에서 userId를 가져옴
         alert("로그인에 성공했습니다!");
         navigate('/Chatbot'); // 성공적으로 로그인 후 Chatbot 페이지로 이동
       } else {
