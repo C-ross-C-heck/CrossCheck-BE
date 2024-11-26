@@ -9,7 +9,7 @@ const ChatRoomCreate = ({ onCreateRoom }) => {
 
   // 컴포넌트 마운트 시 로컬 스토리지에서 userId 불러오기
   useEffect(() => {
-    const storedUserId = localStorage.getItem('userId'); // 로컬스토리지에서 userId 가져옴
+    const storedUserId = sessionStorage.getItem('userId'); // 세션에서 userId 가져옴
     if (storedUserId) {
       setUserId(storedUserId);
     } else {
@@ -29,7 +29,7 @@ const ChatRoomCreate = ({ onCreateRoom }) => {
     }
 
     const requestData = {
-      userId, // 로컬스토리지에서 가져온 userId 사용
+      userId, // 세션에서 가져온 userId 사용
       title: title.trim(),
     };
 
@@ -48,7 +48,7 @@ const ChatRoomCreate = ({ onCreateRoom }) => {
       console.log('응답 데이터:', result);
 
       if (response.ok) {
-        localStorage.setItem('currentChatRoomId', result.chatRoomId);
+        sessionStorage.setItem('currentChatRoomId', result.chatRoomId); // 세션에 currentChatRoomId 저장
 
         alert("채팅방이 성공적으로 생성되었습니다!");
         onCreateRoom(result); // 부모 컴포넌트에 생성된 채팅방 데이터 전달
