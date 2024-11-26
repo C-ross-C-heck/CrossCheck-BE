@@ -8,6 +8,7 @@ import Chatbot from './Chatbot/components/Chatbot';
 import Community from './Community/components/Community';
 import History from './History/components/History';
 import LegalService from './LegalService/components/LegalService';
+import ChatRoomCreate from './Chatbot/components/ChatRoomCreate';
 import './App.css';
 
 const AppLayout = ({ children }) => {
@@ -24,8 +25,7 @@ const App = () => {
             <Router>
                   <Routes>
                         {/* Public routes */}
-                        <Route path="/" element={<Chatbot />} />
-                        <Route path="/login" element={<Login />} />
+                        <Route path="/" element={<Login />} />
                         <Route path="/register" element={<Register />} />
 
                         {/* Protected routes with Sidebar */}
@@ -34,6 +34,14 @@ const App = () => {
                               element={
                                     <AppLayout>
                                           <Chatbot />
+                                    </AppLayout>
+                              }
+                        />
+                        <Route 
+                              path="/chatroomcreate" 
+                              element={
+                                    <AppLayout>
+                                          <ChatRoomCreate />
                                     </AppLayout>
                               }
                         />
